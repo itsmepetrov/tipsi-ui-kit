@@ -5,6 +5,6 @@ import './Breadcrumbs'
 import './Dash'
 import './Carousel'
 import './LabelRating'
-
+import './Expand'
 // Utils
 import './ThemeConstants'
