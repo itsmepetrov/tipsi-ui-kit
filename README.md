@@ -135,6 +135,29 @@ const Example = () => (
 ![labelrating_ios](https://cloud.githubusercontent.com/assets/1177226/22017970/192f9fdc-dcdf-11e6-9ffa-d390480e286f.png)
 ![labelrating_android](https://cloud.githubusercontent.com/assets/1177226/22017972/1a7ddbce-dcdf-11e6-921b-8fce9b33d7a7.png)
 
+### `<Expand />`
+Expand component
+
+#### Expand Props
+| Name | Desc | Type | Default
+| --- | --- | --- | --- |
+| `title` | Always visible. | String | `-`
+| `description` | In close state cropped to one line.  | String | `-`
+| `defaultExpanded` | Default state of component. If it true component will be rendered in open state | Bool | `false`
+| `children` | Child element will be shown only in open state | Node | `-`
+
+#### Example
+```js
+import { Expand } from 'tipsi-ui-kit'
+
+<Expand
+  title="Winemakers Notes:"
+  description="The 2012 vintage in Napa Valley was about as close to ‘normal’ as it gets! "
+/>
+```
+#### Preview
+<img src="https://cloud.githubusercontent.com/assets/370694/21985795/1cec6dc4-dc05-11e6-87b6-9a41d52324d5.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/370694/21985792/1ce9392e-dc05-11e6-89f1-e94da8975145.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/370694/21985794/1ce9e810-dc05-11e6-9c4d-94c9b1807793.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/370694/21985793/1ce9eeaa-dc05-11e6-8311-cebca16a5671.png" width="45%"></img>
+
 ## Utils
 
 ### ThemeRegister
@@ -165,7 +188,6 @@ ThemeRegister.set({
     },
   },
 })
-```
 
 ### UIExplorer
 
