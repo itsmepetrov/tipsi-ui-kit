@@ -2991,47 +2991,6 @@ exports[`UIExplorer components <Carousel /> Spacer - Carousel Prop: spacer (Numb
 </View>
 `;
 
-exports[`UIExplorer components <Dash /> Color of each dash - Prop: dashColor (String) 1`] = `
-<View
-  onLayout={[Function]}
-  style={undefined} />
-`;
-
-exports[`UIExplorer components <Dash /> Dash container style - Prop: style (View.PropTypes.Style) 1`] = `
-<View
-  onLayout={[Function]}
-  style={
-    Object {
-      "alignSelf": "center",
-      "width": 200,
-    }
-  } />
-`;
-
-exports[`UIExplorer components <Dash /> Default - Without props 1`] = `
-<View
-  onLayout={[Function]}
-  style={undefined} />
-`;
-
-exports[`UIExplorer components <Dash /> Gap between two dashes - Prop: dashGap (Number) 1`] = `
-<View
-  onLayout={[Function]}
-  style={undefined} />
-`;
-
-exports[`UIExplorer components <Dash /> Length of each dash - Prop: dashLength (Number) 1`] = `
-<View
-  onLayout={[Function]}
-  style={undefined} />
-`;
-
-exports[`UIExplorer components <Dash /> Thickness of each dash - Prop: dashThickness (Number) 1`] = `
-<View
-  onLayout={[Function]}
-  style={undefined} />
-`;
-
 exports[`UIExplorer components <ColoredTabs /> Simple example - Props: onPress 1`] = `
 <View
   style={
@@ -3094,7 +3053,7 @@ exports[`UIExplorer components <ColoredTabs /> Simple example - Props: onPress 1
             "textAlign": "center",
           }
         }>
-        ONE
+        One
       </Text>
     </View>
     <View
@@ -3139,7 +3098,7 @@ exports[`UIExplorer components <ColoredTabs /> Simple example - Props: onPress 1
             "textAlign": "center",
           }
         }>
-        TWO
+        Two
       </Text>
     </View>
     <View
@@ -3184,7 +3143,7 @@ exports[`UIExplorer components <ColoredTabs /> Simple example - Props: onPress 1
             "textAlign": "center",
           }
         }>
-        THREE
+        Three
       </Text>
     </View>
     <View
@@ -3229,11 +3188,52 @@ exports[`UIExplorer components <ColoredTabs /> Simple example - Props: onPress 1
             "textAlign": "center",
           }
         }>
-        FOUR
+        Four
       </Text>
     </View>
   </View>
 </View>
+`;
+
+exports[`UIExplorer components <Dash /> Color of each dash - Prop: dashColor (String) 1`] = `
+<View
+  onLayout={[Function]}
+  style={undefined} />
+`;
+
+exports[`UIExplorer components <Dash /> Dash container style - Prop: style (View.PropTypes.Style) 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "alignSelf": "center",
+      "width": 200,
+    }
+  } />
+`;
+
+exports[`UIExplorer components <Dash /> Default - Without props 1`] = `
+<View
+  onLayout={[Function]}
+  style={undefined} />
+`;
+
+exports[`UIExplorer components <Dash /> Gap between two dashes - Prop: dashGap (Number) 1`] = `
+<View
+  onLayout={[Function]}
+  style={undefined} />
+`;
+
+exports[`UIExplorer components <Dash /> Length of each dash - Prop: dashLength (Number) 1`] = `
+<View
+  onLayout={[Function]}
+  style={undefined} />
+`;
+
+exports[`UIExplorer components <Dash /> Thickness of each dash - Prop: dashThickness (Number) 1`] = `
+<View
+  onLayout={[Function]}
+  style={undefined} />
 `;
 
 exports[`UIExplorer components <StarRating /> Count - Prop: count (Number) 1`] = `
