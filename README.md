@@ -27,7 +27,6 @@ Customizable colored tabs.
 
 #### Example
 
-
 ```js
 import React from 'react'
 import { ColoredTabs } from 'tipsi-ui-kit'
