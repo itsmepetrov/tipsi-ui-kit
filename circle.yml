@@ -1,0 +1,26 @@
+machine:
+  node:
+    version: 6.2.0
+  java:
+    version: 'oraclejdk8'
+
+dependencies:
+  override:
+    - npm install
+  cache_directories:
+    - "node_modules"
+
+compile:
+  override:
+    - npm run build:android
+
+test:
+  pre:
+    - emulator -avd circleci-android24 -no-window:
+        background: true
+        parallel: true
+    - circle-android wait-for-boot
+    - node_modules/.bin/appium --session-override > appium.out &
+  override:
+    - npm run test:unit:android
+    - npm run test:e2e:android
