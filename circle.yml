@@ -19,11 +19,11 @@ compile:
 
 test:
   pre:
+    - npm run appium -- --session-override > appium.out &
     - emulator -avd circleci-android24 -no-window:
         background: true
         parallel: true
     - circle-android wait-for-boot
-    - node_modules/.bin/appium --session-override > appium.out &
   override:
-    - npm run test:unit:android
+    - npm run test:unit
     - npm run test:e2e:android
