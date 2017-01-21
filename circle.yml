@@ -5,6 +5,9 @@ machine:
     version: 'oraclejdk8'
 
 dependencies:
+  pre:
+    - echo y | android update sdk -u -a -t "tool"
+    - echo y | android update sdk -u -a -t "build-tools-23.0.1"
   override:
     - npm install
   cache_directories:
