@@ -11,6 +11,8 @@ dependencies:
   override:
     - npm install
   cache_directories:
+    - "~/.gradle/caches/"
+    - "~/.gradle/wrapper/"
     - "node_modules"
 
 compile:
@@ -19,7 +21,7 @@ compile:
 
 test:
   pre:
-    - npm run appium -- --session-override > appium.out
+    - npm run appium -- --session-override > appium.out:
         background: true
         parallel: true
     - emulator -avd circleci-android24 -no-window:
