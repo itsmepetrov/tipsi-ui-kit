@@ -24,6 +24,7 @@ test:
         background: true
         parallel: true
     - circle-android wait-for-boot
+    - ps -Af | grep appium
   override:
     - npm run test:unit
-    - npm run test:e2e:android
+    - npm run test:e2e:android --appium-host localhost
